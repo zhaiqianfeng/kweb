@@ -2,6 +2,7 @@ allprojects{
 	apply plugin: 'eclipse'
 }
 subprojects {
+	version = '1.0.0'
 	apply plugin: 'java'
 	apply plugin: 'maven'
 	
@@ -49,5 +50,31 @@ subprojects {
 	    //test
 	    testCompile 'junit:junit:4.12'
 	    testCompile 'com.jayway.jsonpath:json-path:2.2.0'
+	}
+}
+
+project(':base-fragment'){
+	dependencies {
+		compile project(':utils')
+	}
+}
+
+project(':user-fragment'){
+	dependencies {
+		compile project(':base-fragment')
+	}
+}
+
+project(':demo-fragment'){
+	dependencies {
+		project(':user-fragment')
+	}
+}
+
+project(':demo-web'){
+	apply plugin: 'war'
+	apply from: '../buildscript/gretty.plugin'
+	dependencies {
+		compile project(':demo-fragment')
 	}
 }
