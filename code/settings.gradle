@@ -1,0 +1,2 @@
+rootProject.name = 'kweb-root'
+include 'kutils','kbase-fragment','kuser-fragment','demo-fragment','demo-web'

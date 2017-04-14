@@ -1,0 +1,22 @@
+buildscript {
+	repositories {
+		maven { url 'http://download.osgeo.org/webdav/geotools/' }
+		maven { url "http://nexus.topwecar.com:8081/nexus/content/groups/public" }
+	}
+
+	dependencies {
+		classpath 'org.akhikhl.gretty:gretty:1.4.1'
+	}
+}
+
+repositories {
+	maven { url 'http://download.osgeo.org/webdav/geotools/' }
+	maven { url "http://nexus.topwecar.com:8081/nexus/content/groups/public" }
+}
+
+if (!project.plugins.findPlugin(org.akhikhl.gretty.GrettyPlugin))
+project.apply(plugin: org.akhikhl.gretty.GrettyPlugin)
+
+gretty {
+    httpPort = 8080
+}
