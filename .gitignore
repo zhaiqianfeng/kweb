@@ -1,3 +1,4 @@
-/code/.project
-/code/.settings/
-/code/.gradle/
+.project
+.settings/
+.gradle/
+build/
