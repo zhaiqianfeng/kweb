@@ -45,4 +45,4 @@ windows下
 ```
 gradlew.bat demo-web:appRun
 ```
-即可根据提示打开＂*http://localhost:8080/demo-web/*＂ 预览．
+即可根据提示打开[http://localhost:8080/demo-web/](http://localhost:8080/demo-web/) 预览．
