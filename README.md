@@ -3,7 +3,7 @@
 
 有任何疑问可联系作者：[http://www.zhaiqianfeng.com/about/](http://www.zhaiqianfeng.com/about/)
 
-### 插件
+#### 插件
 集成常用插件,便于快速开发:
 * 基础插件－验证码
 * 用户插件－集成用户登陆,登出,注册等
