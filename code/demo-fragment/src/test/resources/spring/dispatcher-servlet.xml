@@ -12,8 +12,6 @@
         http://www.springframework.org/schema/websocket
         http://www.springframework.org/schema/websocket/spring-websocket.xsd">
 
-	<context:component-scan base-package="com.kweb.base.controller" />
-	<context:component-scan base-package="com.kweb.user.controller" />
 	<context:component-scan base-package="com.kweb.demo.controller" />
 
 	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -23,11 +21,4 @@
 	</bean>
 
 	<mvc:annotation-driven />
-	<mvc:resources mapping="/assets/**" location="/assets/" />
-	<mvc:resources mapping="/upload/**" location="/upload/" />
-
-	<!-- <mvc:interceptors>
-		<bean id="realmInterceptor" class="com.lxland.monitor.base.interceptor.RealmInterceptor" />
-	</mvc:interceptors> -->
-
 </beans>

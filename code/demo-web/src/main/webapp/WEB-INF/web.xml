@@ -7,6 +7,7 @@
 	<absolute-ordering>
 		<name>kbase-fragment</name>
 		<name>kuser-fragment</name>
+		<name>demo-fragment</name>
 	</absolute-ordering>
 
 	<context-param>
