@@ -73,6 +73,6 @@ project(':demo-web'){
 	apply plugin: 'war'
 	apply from: '../buildscript/gretty.plugin'
 	dependencies {
-		compile project(':demo-fragment')
+		compile project(':demo-fragment'),project(':kuser-fragment')
 	}
 }

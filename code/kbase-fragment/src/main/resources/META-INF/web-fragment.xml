@@ -5,4 +5,39 @@
 	id="WebFragment_ID" version="3.1">
 	<display-name>kbase-fragment</display-name>
 	<name>kbase-fragment</name>
+
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>/WEB-INF/log4j.properties</param-value>
+	</context-param>
+	<context-param>
+		<param-name>log4jRefreshInterval</param-name>
+		<param-value>6000</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:spring/*.xml</param-value>
+	</context-param>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<trim-directive-whitespaces>true</trim-directive-whitespaces>
+			<scripting-invalid>false</scripting-invalid>
+			<el-ignored>false</el-ignored>
+		</jsp-property-group>
+	</jsp-config>
+
+
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+
 </web-fragment>
