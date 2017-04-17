@@ -5,6 +5,7 @@
 
 
 插件的架构：
+```
 kuser-fragment/
 └── src
     ├── main
@@ -28,4 +29,4 @@ kuser-fragment/
             └── spring
                 ├── application-config.xml
                 └── dispatcher-servlet.xml
-
+```
