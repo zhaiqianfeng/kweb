@@ -36,7 +36,7 @@ public class CaptchaControllerTest {
 	}
 
 	@Test
-	public void _000testDoGetList() throws Exception {
+	public void _000testDoGetCaptcha() throws Exception {
 		this.mockMvc.perform(MockMvcRequestBuilders.get("/assets/captcha/png"))
 				.andExpect(status().isOk());
 	}
