@@ -1,8 +1,7 @@
 /**
-* @author zhaiqianfeng
-* @date April 14, 2017
-* 
-* Captcha
+* @author Zhai　Qianfeng
+* @date April 17, 2017
+* @blog www.zhaiqianfeng.com
 */
 
 package com.kweb.base.controller;
