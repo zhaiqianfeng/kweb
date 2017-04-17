@@ -3,11 +3,12 @@
 
 有任何疑问可联系作者：[http://www.zhaiqianfeng.com/about/](http://www.zhaiqianfeng.com/about/)
 
---------------------
-
+### 插件
 集成常用插件,便于快速开发:
+* 基础插件－验证码
 * 用户插件－集成用户登陆,登出,注册等
 
+#### 插件结构
 插件的架构：
 ```
 kuser-fragment/
@@ -34,3 +35,14 @@ kuser-fragment/
                 ├── application-config.xml
                 └── dispatcher-servlet.xml
 ```
+
+#### 预览
+clone项目，进入code执行
+```bash
+./gradlew demo-web:appRun
+```
+windows下
+```
+gradlew.bat demo-web:appRun
+```
+即可根据提示打开＂*http://localhost:8080/demo-web/*＂ 预览．
