@@ -1,8 +1,6 @@
 #### 概述
 本项目主要搭建gradle+Spring mvc+servlet3.0(web-fragment)进行web插件式开发.
 
-有任何疑问可联系作者：[http://www.zhaiqianfeng.com/about/](http://www.zhaiqianfeng.com/about/)
-
 #### 插件
 集成常用插件,便于快速开发:
 * 基础插件－验证码
